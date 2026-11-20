@@ -1,0 +1,27 @@
+{
+    "name": "dackou/bazi",
+    "description": "用于八字（四柱）排盘的 PHP 组件。",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dackou"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "6tail/lunar-php": "^1.4.8",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dackou\\Bazi\\": "src/"
+        },
+        "classmap": [
+            "compat.php"
+        ]
+    },
+    "scripts": {
+        "test": "@php tests/chart.php"
+    }
+}
